@@ -2,12 +2,10 @@ import os
 import time
 import logging
 import sys
-from http import HTTPStatus
 
 import requests
 from dotenv import load_dotenv
 import telebot
-from telebot.apihelper import ApiTelegramException
 
 
 load_dotenv()
