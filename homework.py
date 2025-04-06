@@ -93,11 +93,11 @@ def parse_status(homework):
     for key in ('homework_name', 'status'):
         if key not in homework:
             raise KeyError(f'Отсутствует ключ {key}')
-    
+
     status = homework['status']
     if status not in HOMEWORK_VERDICTS:
         raise ValueError(f'Неизвестный статус: {status}')
-    
+
     return (f'Изменился статус проверки работы "{homework["homework_name"]}". '
             f'{HOMEWORK_VERDICTS[status]}')
 
